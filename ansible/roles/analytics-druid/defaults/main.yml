@@ -50,13 +50,6 @@ druid_whitelist_filepath: "{{ druid_path }}whitelist"
 
 #End of Common variables
 
-#Router Configurations
-
-druid_router_port: 8888
-druid_router_service : druid/router
-
-druid_router_tmp_dir: "{{ druid_default_tmp_dir }}"
-druid_router_gc_logfile: "{{ druid_crash_logdir }}/gc.log"
 
 #Coordinator Configurations
 
@@ -95,7 +88,6 @@ druid_broker_heap_dump_file : "{{ druid_crash_logdir }}/broker.hprof"
 druid_coordinator_heap_dump_file : "{{ druid_crash_logdir }}/coordinator.hprof"
 druid_overlord_heap_dump_file : "{{ druid_crash_logdir }}/overlord.hprof"
 druid_mm_heap_dump_file : "{{ druid_crash_logdir }}/middlemanager.hprof"
-druid_router_heap_dump_file : "{{ druid_crash_logdir }}/router.hprof"
 
 druid_historical_monitoring_monitors: '"org.apache.druid.server.metrics.HistoricalMetricsMonitor","com.metamx.metrics.JvmMonitor"'
 
