@@ -50,6 +50,14 @@ druid_whitelist_filepath: "{{ druid_path }}whitelist"
 
 #End of Common variables
 
+#Router Configurations
+
+druid_router_port: 8081
+druid_router_service : druid/router
+
+druid_router_tmp_dir: "{{ druid_default_tmp_dir }}"
+druid_router_gc_logfile: "{{ druid_crash_logdir }}/gc.log"
+
 #Coordinator Configurations
 
 druid_coordinator_port: 8081
