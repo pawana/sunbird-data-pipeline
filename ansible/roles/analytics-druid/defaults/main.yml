@@ -95,6 +95,7 @@ druid_broker_heap_dump_file : "{{ druid_crash_logdir }}/broker.hprof"
 druid_coordinator_heap_dump_file : "{{ druid_crash_logdir }}/coordinator.hprof"
 druid_overlord_heap_dump_file : "{{ druid_crash_logdir }}/overlord.hprof"
 druid_mm_heap_dump_file : "{{ druid_crash_logdir }}/middlemanager.hprof"
+druid_router_heap_dump_file : "{{ druid_crash_logdir }}/router.hprof"
 
 druid_historical_monitoring_monitors: '"org.apache.druid.server.metrics.HistoricalMetricsMonitor","com.metamx.metrics.JvmMonitor"'
 
