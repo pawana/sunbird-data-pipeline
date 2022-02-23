@@ -52,7 +52,7 @@ druid_whitelist_filepath: "{{ druid_path }}whitelist"
 
 #Router Configurations
 
-druid_router_port: 8081
+druid_router_port: 8888
 druid_router_service : druid/router
 
 druid_router_tmp_dir: "{{ druid_default_tmp_dir }}"
